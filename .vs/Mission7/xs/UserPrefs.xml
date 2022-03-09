@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{A68BA16E-9984-4A1B-BDA6-D65744610777}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Mission7/Pages/Admin/Books.razor" Line="6" Column="8" />
+      <File FileName="Mission7/Pages/Admin/Books.razor" Line="24" Column="1" />
       <File FileName="Mission7/Pages/Admin/Orders.razor" Line="8" Column="1" />
       <File FileName="Mission7/Startup.cs" Line="94" Column="83" />
       <File FileName="Mission7/Pages/Admin/Index.cshtml" Line="21" Column="57" />
@@ -11,6 +11,8 @@
       <File FileName="Mission7/Pages/Admin/AdminLayout.razor" Line="19" Column="18" />
       <File FileName="Mission7/Models/Purchase.cs" Line="42" Column="2" />
       <File FileName="Mission7/Pages/Admin/OrderTable.razor" Line="22" Column="34" />
+      <File FileName="Mission7/Models/IBookstoreRepository.cs" Line="12" Column="41" />
+      <File FileName="Mission7/Models/EFBookstoreRepository.cs" Line="31" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +22,7 @@
               <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="Admin" expanded="True">
-                  <Node name="AdminLayout.razor" selected="True" />
+                  <Node name="Books.razor" selected="True" />
                 </Node>
               </Node>
               <Node name="Views" expanded="True">

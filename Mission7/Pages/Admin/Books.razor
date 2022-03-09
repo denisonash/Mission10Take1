@@ -1,8 +1,48 @@
 ﻿@page "/admin/books"
 @page "/admin"
+@inherits OwningComponentBase<IBookstoreRepository>
 
-<h3>Component1</h3>
+<table class="table table-sm table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Book Id</th>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if(BookData?.Count() > 0)
+        {
+            @foreach (Mission7.Models.Books b in BookData)
+                {
+                    <tr>
+                        <td>@b.Title</td>
+                    </tr>
+                }
+        }
+
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center">No Books</td>
+            </tr>
+        }
+    </tbody>
+</table>
 
 @code {
+    public IBookstoreRepository repo => Service;
 
+    public IEnumerable<Mission7.Models.Books> BookData { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        await UpdateData();
+    }
+
+    public async Task UpdateData()
+    {
+        BookData = await repo.Books.ToListAsync();
+    }
 }
