@@ -12,6 +12,7 @@ namespace Mission7.Pages.Admin
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
+    [Microsoft.AspNetCore.Components.RouteAttribute("/admin/orders")]
     public partial class Orders : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

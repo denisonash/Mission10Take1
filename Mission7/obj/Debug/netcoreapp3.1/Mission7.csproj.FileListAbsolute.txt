@@ -326,3 +326,11 @@
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Mission7.dll
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Mission7.pdb
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Mission7.genruntimeconfig.cache
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Mission7.RazorComponent.input.cache
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Books.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Orders.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Mission7.RazorComponent.output.cache
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Mission7.dll
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Books.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Orders.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Index.cshtml.g.cs
