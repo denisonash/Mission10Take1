@@ -1,12 +1,18 @@
 ﻿<Properties StartupConfiguration="{A68BA16E-9984-4A1B-BDA6-D65744610777}|Default">
   <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Mission7/Pages/Admin/Books.razor" Line="6" Column="1" />
+      <File FileName="Mission7/Pages/Admin/Orders.razor" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mission7" expanded="True">
             <Node name="Mission7" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="Admin" selected="True" />
+                <Node name="Admin" expanded="True">
+                  <Node name="Books.razor" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
