@@ -342,3 +342,7 @@
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/_Imports.razor.g.cs
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/OrderTable.razor.g.cs
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/OrderTable.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Details.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Details.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Editor.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Editor.razor.g.cs

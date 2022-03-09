@@ -17,7 +17,21 @@
             @foreach (Mission7.Models.Books b in BookData)
                 {
                     <tr>
+                        <td>@b.BookID</td>
                         <td>@b.Title</td>
+                        <td>@b.Author</td>
+
+                        <td>
+                            <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookID)">Details</NavLink>
+                        </td>
+
+                        <td>
+                            <NavLink class="btn btn-warning btn-sm" href="@GetEditUrl(b.BookID)">Edit</NavLink>
+                        </td>
+
+                        <td>
+                            <button class="btn btn-danger btn-sm" @onclick="@(x => RemoveBook(b))">Delete</button>
+                        </td>
                     </tr>
                 }
         }
@@ -44,5 +58,14 @@
     public async Task UpdateData()
     {
         BookData = await repo.Books.ToListAsync();
+    }
+
+    public string GetDetailsUrl(long id) => $"/admin/books/details/{id}";
+    public string GetEditUrl(long id) => $"/admin/books/edit/{id}";
+
+    public async Task RemoveBook(Mission7.Models.Books b)
+    {
+        repo.DeleteBook(b);
+        await UpdateData();
     }
 }
