@@ -1,7 +1,40 @@
 ﻿@page "/admin/orders"
+@inherits OwningComponentBase<IPurchaseRepository>
 
-<h3>Component1</h3>
+<OrderTable TableTitle="Awaiting Fulfillment" Orders="AwaitingFulfillment"
+            ButtonLabel="Shipped" OrderSelected="ShipOrder"></OrderTable>
+<OrderTable TableTitle="Shipped" Orders="ShippedOrders"
+            ButtonLabel="Reset" OrderSelected="ResetOrder"></OrderTable>
+
+<button class="btn btn-info" @onclick="@(x => UpdateData())">Refresh Orders</button>
 
 @code {
+    public IPurchaseRepository repo => Service;
 
-}
+    public IEnumerable<Purchase> AllOrders { get; set; }
+    public IEnumerable<Purchase> AwaitingFulfillment { get; set; }
+    public IEnumerable<Purchase> ShippedOrders { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        await UpdateData();
+    }
+
+    public async Task UpdateData()
+    {
+        AllOrders = await repo.Purchases.ToListAsync();
+        AwaitingFulfillment = AllOrders.Where(x => !x.PurchaseReceived);
+        ShippedOrders = AllOrders.Where(x => x.PurchaseReceived);
+    }
+
+    public void ShipOrder(int id) => UpdateOrder(id, true);
+    public void ResetOrder(int id) => UpdateOrder(id, false);
+
+    private void UpdateOrder(int id, bool shipped)
+    {
+        Purchase p = repo.Purchases.FirstOrDefault(x => x.PurchaseId == id);
+        p.PurchaseReceived = shipped;
+        repo.SavePurchase(p);
+    }
+} 
+

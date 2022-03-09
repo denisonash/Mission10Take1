@@ -54,13 +54,47 @@ using Mission7.Models;
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/admin/orders")]
-    public partial class Orders : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Orders : OwningComponentBase<IPurchaseRepository>
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 11 "/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/Pages/Admin/Orders.razor"
+       
+    public IPurchaseRepository repo => Service;
+
+    public IEnumerable<Purchase> AllOrders { get; set; }
+    public IEnumerable<Purchase> AwaitingFulfillment { get; set; }
+    public IEnumerable<Purchase> ShippedOrders { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        await UpdateData();
+    }
+
+    public async Task UpdateData()
+    {
+        AllOrders = await repo.Purchases.ToListAsync();
+        AwaitingFulfillment = AllOrders.Where(x => !x.PurchaseReceived);
+        ShippedOrders = AllOrders.Where(x => x.PurchaseReceived);
+    }
+
+    public void ShipOrder(int id) => UpdateOrder(id, true);
+    public void ResetOrder(int id) => UpdateOrder(id, false);
+
+    private void UpdateOrder(int id, bool shipped)
+    {
+        Purchase p = repo.Purchases.FirstOrDefault(x => x.PurchaseId == id);
+        p.PurchaseReceived = shipped;
+        repo.SavePurchase(p);
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
