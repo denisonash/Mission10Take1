@@ -334,3 +334,9 @@
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Books.razor.g.cs
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Orders.razor.g.cs
 /Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Index.cshtml.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/AdminLayout.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Routed.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/_Imports.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/AdminLayout.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Routed.razor.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/_Imports.razor.g.cs
