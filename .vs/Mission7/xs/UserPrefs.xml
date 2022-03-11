@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{A68BA16E-9984-4A1B-BDA6-D65744610777}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mission7/Pages/Admin/OrderTable.razor">
     <Files>
       <File FileName="Mission7/Pages/Admin/Books.razor" Line="7" Column="13" />
       <File FileName="Mission7/Pages/Admin/Orders.razor" Line="1" Column="1" />
