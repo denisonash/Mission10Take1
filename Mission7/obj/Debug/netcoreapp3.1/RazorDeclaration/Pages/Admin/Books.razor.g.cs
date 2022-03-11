@@ -63,7 +63,7 @@ using Mission7.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/Pages/Admin/Books.razor"
+#line 50 "/Users/ashleydenison/Documents/GitHub/Mission10Take1/Mission7/Pages/Admin/Books.razor"
        
     public IBookstoreRepository repo => Service;
 

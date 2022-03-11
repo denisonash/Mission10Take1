@@ -41,7 +41,7 @@
     <div class="form-group">
         <label>ISBN:</label>
         <ValidationMessage For="@(() => b.ISBN)"></ValidationMessage>
-        <InputNumber class="form-control" @bind-Value="b.ISBN"></InputNumber>
+        <InputText class="form-control" @bind-Value="b.ISBN"></InputText>
     </div>
 
     <div class="form-group">
@@ -77,7 +77,7 @@
     [Parameter]
     public long Id { get; set; } = 0;
 
-    public string ThemeColor => Id == 0 ? "primary" : "warning";
+    public string ThemeColor => Id == 0 ? "success" : "warning";
 
     public string TitleText => Id == 0 ? "Add" : "Edit";
 

@@ -68,7 +68,7 @@ using Mission7.Models;
     [Parameter]
     public long Id { get; set; } = 0;
 
-    public string ThemeColor => Id == 0 ? "primary" : "warning";
+    public string ThemeColor => Id == 0 ? "success" : "warning";
 
     public string TitleText => Id == 0 ? "Add" : "Edit";
 
